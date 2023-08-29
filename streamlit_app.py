@@ -1,6 +1,4 @@
 import streamlit as st
-# from flask import Flask
-# app = Flask(__name__)
 def find_largest(num1, num2, num3):
     return max(num1, num2, num3)
 
@@ -15,9 +13,5 @@ def main():
         largest = find_largest(num1, num2, num3)
         st.write(f"The largest number is: {largest}")
 
-if __name__ == "main":
-    main()
+main()
 
-
-# if __name__ == '__main__':
-#     app.run() #debug=True
